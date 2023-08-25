@@ -1,0 +1,20 @@
+import Personas.*
+
+
+test "Olivia nace con concentracion = 6" {
+
+	assert.equals(6,olivia.gradoDeConcentracion())
+
+}
+
+test "bruno queda con 54500 de peso y tiene sed despues del baño de vapor" {
+
+	bruno.darseBanioDeVapor()
+	assert.equals(54500,bruno.peso())
+	assert.that(bruno.tieneSed())
+
+}
+test "bruno nace sin sed"{
+	
+	assert.notThat(bruno.tieneSed())
+}
